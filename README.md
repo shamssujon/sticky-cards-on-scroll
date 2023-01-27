@@ -1,2 +1,2 @@
 ## Sticky cards on scroll
-Preview: 
+Preview: https://sticky-cards-on-scroll.netlify.app/
