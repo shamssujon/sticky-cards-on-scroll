@@ -6,7 +6,7 @@ const Intro = () => {
 			<h1 className="text-4xl md:text-6xl">Sticky cards on scroll</h1>
 			<p className="text-lg">Scroll down to see the sticky effect on the cards</p>
 			<a
-				href=""
+				href="https://github.com/shamssujon/sticky-cards-on-scroll"
 				target="_blank"
 				className="inline-flex items-center justify-center gap-2 rounded-lg bg-emerald-600 px-6 py-3 text-center text-lg transition hover:bg-emerald-700 ">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-4 w-4" viewBox="0 0 16 16">
