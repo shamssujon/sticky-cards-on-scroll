@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "./Card";
-import { cardsData } from "./data";
+import { cardContent } from "./data";
 
 const Cards = () => {
+	const [cardsData, setCardsData] = useState(cardContent);
+	console.log(cardsData);
+
 	return (
-		<div className="mx-auto max-w-4xl space-y-20 px-5 py-20">
-			{cardsData.map((card) => (
-				<Card key={card.id} data={card}></Card>
+		<div className="space-y-20">
+			{cardsData.map((card,index) => (
+				// <Card key={card.id} data={card}></Card>
+				<Card key={card.id} data={card} topGap={30 * (index + 1)}></Card>
 			))}
 		</div>
 	);

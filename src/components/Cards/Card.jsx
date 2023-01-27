@@ -1,9 +1,11 @@
 import React from "react";
 
-const Card = ({ data }) => {
+const Card = ({ data, topGap }) => {
 	const { title, body, img } = data;
 	return (
-		<div className="grid grid-cols-1 overflow-hidden rounded-xl bg-white shadow-md md:grid-cols-2">
+		<div
+			className={`sticky grid grid-cols-1 overflow-hidden rounded-xl bg-white shadow-[0_3px_10px_rgba(0,0,0,0.1)] md:grid-cols-2`}
+			style={{ top: topGap }}>
 			<div className="flex flex-col justify-center p-10">
 				<div className="space-y-4">
 					<h2 className="font-serif text-5xl">{title}</h2>
