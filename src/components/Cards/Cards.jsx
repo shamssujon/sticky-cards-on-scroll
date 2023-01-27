@@ -1,16 +1,14 @@
 import React, { useState } from "react";
 import Card from "./Card";
-import { cardContent } from "./data";
+import { cardsData } from "./data";
 
 const Cards = () => {
-	const [cardsData, setCardsData] = useState(cardContent);
-	console.log(cardsData);
+	const stickyTopSpace = 50;
 
 	return (
 		<div className="space-y-20">
-			{cardsData.map((card,index) => (
-				// <Card key={card.id} data={card}></Card>
-				<Card key={card.id} data={card} topGap={30 * (index + 1)}></Card>
+			{cardsData.map((card, index) => (
+				<Card key={card.id} data={card} stickyTopSpace={stickyTopSpace * (index + 1)}></Card>
 			))}
 		</div>
 	);
